@@ -1,0 +1,13 @@
+#Database configuration for MySql Dev
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/springboot_activemq_example
+    username: activemq
+    password: password
+    platform: mysql
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    database: mysql
+    show-sql: true
